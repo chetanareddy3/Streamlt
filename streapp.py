@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 
+st.set_page_config(page_title='Hello',page_icon=":smiley:")
+
 # configuration
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
@@ -87,8 +89,8 @@ if uploaded_file is not None:
         
         
 if uploaded_file is not None:
-    test=df.duplicated().any()
-    if test==True:
+    test1=df.duplicated().any()
+    if test1==True:
         if st.checkbox("Duplicates in the dataset"):
             st.warning("This Dataset Contains Some Duplicate Values")
             dup=st.selectbox("Do You Want to Remove Duplicate Values?", \
@@ -155,7 +157,7 @@ if st.checkbox("Box Plot"):
     st.subheader("Boxplot Settings")
     try:
         y = st.selectbox("Y axis", options=list(df.columns))
-        x = stselectbox("X axis", options=list(df.columns))
+        x = st.selectbox("X axis", options=list(df.columns))
         #color_value = st.sidebar.selectbox("Color", options=non_numeric_columns)
         plot = px.box(data_frame=df, y=y, x=x)
         st.plotly_chart(plot)

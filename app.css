@@ -1,0 +1,9 @@
+.css-djmyrs {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: blanchedalmond;
+    border-radius: 0.25rem;
+    color: rgb(38, 39, 48);
+}

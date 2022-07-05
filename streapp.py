@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 import seaborn as sns
-<link rel="stylesheet" href="app.css">
+
 
 st.set_page_config(page_title='Hello',page_icon=":smiley:")
 

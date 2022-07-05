@@ -4,20 +4,15 @@ import streamlit as st
 import plotly_express as px
 import pandas as pd
 import matplotlib.pyplot as plt
-
 import seaborn as sns
-
-
-st.set_page_config(page_title='Hello',page_icon=":smiley:")
+st.set_page_config(page_title='EasyBe-Analysis',page_icon="https://png.pngtree.com/png-clipart/20210302/ourmid/pngtree-statistics-clip-art-rainbow-gradient-chart-png-image_2986825.jpg")
 
 # configuration
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 # title of the app
-original_title = '<p style="font-family:Courier;text-align:center;font-weight: bold;text-transform:uppercase; color:#DC143C; font-size: 30px;background-color:#FFF8DC;">Data Analysis</p>'
+original_title = '<p style="font-family:Math;text-align:center;font-weight: bold;text-transform:uppercase; color:#DC143C; font-size: 30px;background-color:#FFF8DC;">EasyBe-Analysis</p>'
 st.markdown(original_title, unsafe_allow_html=True)
-
-
 # Add a sidebar
 st.sidebar.subheader("Visualization Settings")
 
@@ -164,3 +159,4 @@ if st.checkbox("Box Plot"):
         st.plotly_chart(plot)
     except Exception as e:
         print(e)
+  
